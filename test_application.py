@@ -12,7 +12,7 @@ class UnitTests(unittest.TestCase):
     @patch('sys.stdout', new_callable=StringIO)
     def test_printOnConsole(self, mock_stdout):
         printOnConsole()
-        self.assertEqual(mock_stdout.getvalue(), "Hello World\n")
+        self.assertEqual(mock_stdout.getvalue(), "Hello World!\n")
 
 if __name__ == '__main__':
     unittest.main()
